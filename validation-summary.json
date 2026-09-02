@@ -1,0 +1,26 @@
+{
+  "ok": true,
+  "format": "WEBP",
+  "mode": "RGBA",
+  "columns": 8,
+  "rows": 11,
+  "spriteVersionNumber": 2,
+  "width": 1536,
+  "height": 2288,
+  "transparentRgbResiduePixels": 0,
+  "errors": [],
+  "warnings": [],
+  "animations": {
+    "idle": 6,
+    "running-right": 8,
+    "running-left": 8,
+    "waving": 4,
+    "jumping": 5,
+    "failed": 8,
+    "waiting": 6,
+    "running": 6,
+    "review": 6
+  },
+  "lookDirections": 16,
+  "designConstraint": "Exactly one visible amber pendant necklace on the chest; no amber beside the head or ears."
+}
