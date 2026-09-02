@@ -1,44 +1,65 @@
-# Gromi Codex Pet
+# Gromi Codex 宠物
 
-Gromi is a Codex-compatible animated pet based on the Gromi character references: a bright corgi adventurer with large upright ears, orange-and-white markings, a purple scarf, a brown coat, and one lucky amber pendant necklace.
+这是一个可以放进 Codex 里的 Gromi 小宠物。
 
-The final pet follows the requested amber design rule: Gromi has exactly one visible amber pendant on the chest, with no floating amber beside the head or ears.
+Gromi 是一只戴紫色围巾、穿棕色外套的小柯基，胸前有一个琥珀项链。制作时只保留了胸前这一个琥珀，头旁边没有漂浮的琥珀。
 
-![Gromi contact sheet](previews/contact-sheet.png)
+![Gromi 预览](previews/contact-sheet.png)
 
-## Contents
+## 怎么下载
 
-- `pet.json` - Codex pet manifest.
-- `assets/spritesheet.webp` - final 8x11 transparent animated spritesheet.
-- `previews/contact-sheet.png` - overview of the animation frames.
-- `previews/look-directions.png` - 16-direction look validation preview.
-- `previews/idle.gif` - idle animation preview.
-- `previews/failed.gif` - failed animation preview.
-- `validation.json` - structural validation output.
+点页面右上角绿色的 **Code** 按钮，然后点 **Download ZIP**。
 
-## Install Locally
+下载后把压缩包解开，你会看到这些重要文件：
 
-Copy the manifest and spritesheet into your Codex pets folder:
+- `pet.json`
+- `assets/spritesheet.webp`
+- `previews` 文件夹，里面是预览图
 
-```sh
-mkdir -p ~/.codex/pets/gromi
-cp pet.json ~/.codex/pets/gromi/pet.json
-cp assets/spritesheet.webp ~/.codex/pets/gromi/spritesheet.webp
+真正安装宠物只需要前两个文件。
+
+## 怎么安装到 Codex
+
+1. 打开访达。
+2. 按下 `Command + Shift + G`。
+3. 输入这个位置：
+
+```text
+~/.codex/pets/
 ```
 
-Then restart or reload Codex and select `Gromi` from the pet picker.
+4. 如果里面没有 `gromi` 文件夹，就新建一个，名字叫：
 
-## Pet Metadata
-
-```json
-{
-  "id": "gromi",
-  "displayName": "Gromi",
-  "spriteVersionNumber": 2,
-  "spritesheetPath": "spritesheet.webp"
-}
+```text
+gromi
 ```
 
-## License
+5. 把下载到的两个文件放进去：
 
-This repository is published under the MIT License for the generated pet package in this project.
+```text
+pet.json
+spritesheet.webp
+```
+
+注意：`spritesheet.webp` 在下载包里的 `assets` 文件夹里面。
+
+最后的位置应该像这样：
+
+```text
+~/.codex/pets/gromi/pet.json
+~/.codex/pets/gromi/spritesheet.webp
+```
+
+6. 重新打开 Codex，然后在宠物选择里选择 Gromi。
+
+## 看看效果
+
+待机动画：
+
+![Gromi 待机](previews/idle.gif)
+
+更多动作可以看 `previews` 文件夹。
+
+## 说明
+
+这个项目是给喜欢 Gromi 和 Codex 小宠物的朋友下载使用的。
